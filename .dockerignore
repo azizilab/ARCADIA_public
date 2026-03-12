@@ -1,0 +1,104 @@
+# Ignore files that shouldn't be copied to Docker
+
+# Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Git and version control
+.git/
+.gitignore
+.gitattributes
+
+# IDE and editor files
+.vscode/
+.idea/
+.cursor/
+.devcontainer/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter/IPython
+*.ipynb_checkpoints/
+.ipython/
+.jupyter/
+
+# Documentation (not needed in Docker)
+*.md
+docs/
+
+# Large data directories
+data/
+CODEX_RNA_seq/data/
+CODEX_RNA_seq/results/
+CODEX_RNA_seq/logs/
+CODEX_RNA_seq/notebooks/
+CITE-seq_RNA_seq/data/
+external_data/
+figures/
+fusion_outputs/
+
+# Legacy and old code
+legacy/
+CODEX_RNA_seq/legacy/
+CITE-seq_RNA_seq/legacy/
+metrics/legacy/
+
+# Logs and outputs
+logs/
+mlruns/
+ot_grid_search_logs/
+profiling/
+*.log
+
+# Model checkpoints and results
+*.pt
+*.pth
+*.h5ad
+*.h5
+model_comparison/
+simple_protein_vae_results/
+CODEX_RNA_seq/simple_vae_results_archetype_script/
+pipeline_real_data/
+pipeline_synthetic_data/
+starfysh_reproducibility-main/
+
+# Example repos (reference only, not needed in Docker)
+example_repos/
+
+# Old dataset directories (if not actively used)
+CITE-seq_PBMC/
+CITE-seq_RNA_seq/output/
+CITE-seq_RNA_seq/figures/
+CITE-seq_RNA_seq/mlflow/
+CITE-seq_RNA_seq/mlflow_comparison/
+
+# Test files (optional - might want to keep for testing)
+CODEX_RNA_seq/tests/
+
+# Visualization outputs
+visualization/
+
+# Images and media
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# Other
+.nv/
+.ssh/
+.cache/
+.cursor-server/
+.local/
